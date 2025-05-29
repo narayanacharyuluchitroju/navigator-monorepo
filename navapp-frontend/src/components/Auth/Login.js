@@ -13,7 +13,7 @@ const Login = () => {
         console.log('Submitting login form...', { email, password });
 
         try {
-            const res = await axios.post('http://localhost:8080/api/auth/login', {
+            const res = await axios.post('/auth/login', {
                 email,
                 password
             }, {
