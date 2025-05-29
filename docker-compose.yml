@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  backend:
+    image: raghavendrach/navigator-backend:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - MONGO_URI=mongodb://mongo:27017/navigator
+      - MONGO_DB=navigator
+      - SERVER_PORT=8080
+    depends_on:
+      - mongo
+
+  frontend:
+    image: raghavendrach/navigator-frontend:latest
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
