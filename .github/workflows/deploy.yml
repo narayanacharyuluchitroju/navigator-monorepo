@@ -22,7 +22,7 @@ jobs:
 
       - name: Build Spring Boot backend
         run: mvn clean install
-        working-directory: navigator-monorepo/Navigator
+        working-directory: Navigator
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -31,4 +31,4 @@ jobs:
 
       - name: Install and build frontend
         run: npm install && npm run build
-        working-directory: navigator-monorepo/navapp-frontend
+        working-directory: navapp-frontend
