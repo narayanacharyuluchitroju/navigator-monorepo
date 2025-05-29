@@ -27,7 +27,7 @@ jobs:
 
       - name: Build Spring Boot App
         working-directory: Navigator
-        run: ./mvnw clean install
+        run: mvn clean install
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
