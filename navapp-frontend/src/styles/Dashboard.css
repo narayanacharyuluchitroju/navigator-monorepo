@@ -1,0 +1,91 @@
+.dashboard-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f7fa;
+    height: calc(100vh - 60px);
+    box-sizing: border-box;
+}
+
+.form-section {
+    width: 35%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.map-section {
+    width: 65%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-section h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.location-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.saved-locations {
+    margin-top: 20px;
+}
+
+.saved-locations ul {
+    padding: 0;
+    list-style: none;
+}
+
+.saved-locations li {
+    background: #eef2f5;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.saved-locations .delete-button {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.saved-locations .delete-button:hover {
+    background-color: #b52a37;
+}
