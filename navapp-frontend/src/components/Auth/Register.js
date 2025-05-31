@@ -11,7 +11,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await API.post('/auth/register', { email, password });
+            await API.post('http://localhost:8080/api/auth/register', { email, password });
             alert('Registration successful');
             navigate('/login');
         } catch {

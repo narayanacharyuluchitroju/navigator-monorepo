@@ -12,8 +12,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/locations")
-//@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
-@CrossOrigin(origins = "http://frontend:80") // Docker internal call
+@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
+//@CrossOrigin(origins = "http://frontend:80") // Docker internal call
 public class LocationController {
 
     private final LocationService service;
