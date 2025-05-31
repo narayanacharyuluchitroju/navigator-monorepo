@@ -1,6 +1,4 @@
-# NavApp Monorepo
-
-# 📌 Project Name: Navigator
+# 📌 Project Name: Navigator: A Full-Stack Location Saver App
 
 ## 🗺️ Overview
 Navigator is a full-stack location management application built with:
