@@ -27,13 +27,13 @@ It allows users to register, log in, add their locations via map click or geoloc
 ## 🖼️ Screenshots
 
 ### 🔐 Login Page
-![Login](assets/login.png)
+![Login](LoginPage.jpg)
 
 ### 📝 Register Page
-![Register](assets/register.png)
+![Register](RegisterPage.jpg)
 
 ### 📊 Dashboard
-![Dashboard](assets/dashboard.png)
+![Dashboard](SavedLocations.jpg)
 
 ---
 
